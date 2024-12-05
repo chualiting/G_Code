@@ -1,0 +1,86 @@
+;open floor
+
+;Assume the followings:
+;Linear measurement is in mm.
+;Height of Tool raised above work piece = 5 mm
+;Cutting is carried out at tool height = 0 mm
+;Feed rate of tool riase and lower = 100 mm per minute
+;Feed rate in cutting = 50 mm per minute
+
+% ;start/end of program
+
+G17 ;select XY Plane
+G21 ;set units to mm
+G90 ;set Absolute distance mode
+G94 ;set units per minute
+
+g0 x0 y0
+g0 x200 y0
+g03 x100 y100 i-100 j0
+g01 x100 y900
+g03 x200 y1000 i0 j100
+g01 x1200 y1000 
+g03 x1300 y900 i100 j0
+g01 x1300 y100
+g03 x1200 y0 i0 j-100
+g01 x200 y0
+
+g01 x200 y0 z5 ;lift up the tools
+GO1 x600 y300
+GO1 x600 y300 z0
+
+g01 x800 y300
+g03 x800 y700 j200 i0
+g01 x600 y700
+g03 x600 y300 j-200 i0
+
+
+
+
+
+
+
+
+new
+
+;Chua liting
+;S10206288F
+;open floor
+
+;Assume the followings:
+;Linear measurement is in mm.
+;Height of Tool raised above work piece = 5 mm
+;Cutting is carried out at tool height = 0 mm
+;Feed rate of tool riase and lower = 100 mm per minute
+;Feed rate in cutting = 50 mm per minute
+
+% ;start/end of program
+
+G17 ;select XY Plane
+G21 ;set units to mm
+G90 ;set Absolute distance mode
+G94 ;set units per minute
+
+g0 x0 y0
+g0 x200 y0
+g03 x100 y100 i-100 j0
+g01 x100 y900
+g03 x200 y1000 i0 j100
+g01 x1200 y1000 
+g03 x1300 y900 i100 j0
+g01 x1300 y100
+g03 x1200 y0 i0 j-100
+g01 x200 y0
+
+g01 x200 y0 z5 ;lift up the tools
+GO1 x600 y300 z5
+GO1 x600 y300 z-5
+
+g01 x800 y300
+g03 x800 y700 j200 i0
+g01 x600 y700
+g03 x600 y300 j-200 i0
+
+
+
+

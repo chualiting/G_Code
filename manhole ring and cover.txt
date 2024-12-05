@@ -1,0 +1,34 @@
+;manhole ring and cover
+
+;Assume the followings:
+;Linear measurement is in mm.
+;Height of Tool raised above work piece = 5 mm
+;Cutting is carried out at tool height = 0 mm
+;Feed rate of tool riase and lower = 100 mm per minute
+;Feed rate in cutting = 50 mm per minute
+
+% ;start/end of program
+
+G17 ;select XY Plane
+G21 ;set units to mm
+G90 ;set Absolute distance mode
+G94 ;set units per minute
+
+
+G01 x0 y0
+G02 x-200 y200 i0 j200
+G02 X0 y400 i200 j0
+G01 x200 y400 
+G02 x400 y200 i0 j-200
+G02 x200 y0 i-200 j0
+G01 x0 y0
+G01 x0 y-60
+G02 x-260 y200 i0 j260
+g02 x0 y520 i260 j0
+g01 x200 y460
+g02 x200 y-60 i0 j-260
+g0 x0 y-60
+g0 x0 y0
+
+
+% ;start/end of program

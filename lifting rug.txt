@@ -1,0 +1,28 @@
+;lifting lug
+
+;Assume the followings:
+;Linear measurement is in mm.
+;Height of Tool raised above work piece = 5 mm
+;Cutting is carried out at tool height = 0 mm
+;Feed rate of tool riase and lower = 100 mm per minute
+;Feed rate in cutting = 50 mm per minute
+
+% ;start/end of program
+
+G17 ;select XY Plane
+G21 ;set units to mm
+G90 ;set Absolute distance mode
+G94 ;set units per minute
+
+g0 x0 y0
+g01 x0 y196
+g02 x140 y196 i70 j0
+g01 x140 y0
+g1 x0 y0
+g1 x0 y0 z5  ;lift up the tools
+
+g01 x70 y161 z5
+g01 x70 y161 z-5
+g03 x70 y161 j30 i0 
+g03 x70 y161 j30 i0 z5
+g1 x0 y0 z5  ;move tool back to starting point

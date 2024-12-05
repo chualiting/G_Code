@@ -1,0 +1,34 @@
+;stiffener guide
+
+;Assume the followings:
+;Linear measurement is in mm.
+;Height of Tool raised above work piece = 5 mm
+;Cutting is carried out at tool height = 0 mm
+;Feed rate of tool riase and lower = 100 mm per minute
+;Feed rate in cutting = 50 mm per minute
+
+% ;start/end of program
+
+G17 ;select XY Plane
+G21 ;set units to mm
+G90 ;set Absolute distance mode
+G94 ;set units per minute
+
+
+G00 x0 y0
+g01 x0 y180
+g01 x20 y200
+g01 x130 y200
+g01 x150 y180
+g01 x150 y0
+g01 x120 y0
+g01 x110 y10
+g01 x110 y150
+g01 x100 y160
+g01 x50 y160
+g01 x40 y150
+g01 x40 y10
+g01 x40 y10
+g01 x30 y0
+g01 x0 y0
+% ;start/end of program

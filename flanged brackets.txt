@@ -1,0 +1,30 @@
+;flanged brackets
+
+;Assume the followings:
+;Linear measurement is in mm.
+;Height of Tool raised above work piece = 5 mm
+;Cutting is carried out at tool height = 0 mm
+;Feed rate of tool riase and lower = 100 mm per minute
+;Feed rate in cutting = 50 mm per minute
+
+% ;start/end of program
+
+G17 ;select XY Plane
+G21 ;set units to mm
+G90 ;set Absolute distance mode
+G94 ;set units per minute
+
+
+
+g01 x50 y0 
+g03 x0 y50 i-50 j0
+g01 x0 y340
+g01 x50 y340
+g01 x80 y380
+g01 x450 y90
+g01 x400 y50
+g01 x400 y0
+g01 x50 y0
+
+
+% ;start/end of program
