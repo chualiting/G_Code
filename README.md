@@ -24,3 +24,7 @@ FXY and FZ are feed rates.
 I lift up the tools to draw the hole , the lifting height is not fixed , can be any height .
 ![image](https://github.com/user-attachments/assets/dbe7942a-348d-4924-b55d-2f821716b9b3)
 ![image](https://github.com/user-attachments/assets/0b0e44b7-dc64-4406-8189-2c36d6fad130)
+### Open Floor
+Please note that some diemensions required calculations .
+![image](https://github.com/user-attachments/assets/6a029659-1e6a-4470-8607-3546219a9e33)
+![image](https://github.com/user-attachments/assets/392dfba5-0b13-4b2b-ad5b-f047a9a5d7fd)
